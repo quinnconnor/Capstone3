@@ -1,7 +1,5 @@
 # Unit 3 Capstone — Intelligent Document Search Pipeline
 
-This repository implements the Bronze capstone: S3 ingestion, Textract PDF extraction, local Sentence Transformers embeddings, RDS text storage, OpenSearch semantic retrieval, Glue catalog/ETL, Redshift analytics, Matplotlib charts, Bedrock/Claude routing and generation, SQL validation, and tokenomics tracking.
-
 ## Architecture
 
 ```text
@@ -87,9 +85,3 @@ Demonstrate that:
 11. SQL validation has 5+ cases including `SELECT ...; DROP TABLE ...;`.
 12. Ten-query tokenomics summary is produced.
 13. Both required synthesis questions produce one integrated answer with both `[DOC:...]` and `[SQL:...]` citations.
-
-## AWS notes
-
-OpenSearch supports `knn_vector` fields and k-NN semantic search. Glue's Redshift integration uses S3 staging and requires suitable VPC/IAM connectivity. Lambda container images are an AWS-supported deployment mechanism for Python.
-
-Do not commit credentials, database passwords, or confidential documents.
